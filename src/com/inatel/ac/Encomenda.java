@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Encomenda {
-//vamos ver se funfa
+
 	private int status;
 	private int numero;
 	private String nomeDoCliente;
@@ -18,7 +18,7 @@ public class Encomenda {
 	}
 	
 	public float calcularPrecoTotal(){
-		
+		return 0;
 	}
 	
 	public void confirmarMontagem(){
@@ -31,7 +31,7 @@ public class Encomenda {
 	}
 	
 	public String gerarDetalhes(){
-		
+		return new String();
 	}
 	
 }

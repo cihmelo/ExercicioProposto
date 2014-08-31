@@ -11,7 +11,7 @@ public class Componentes {
 	}
 	
 	public String gerarDetalhes(){
-		
+		return new String();
 	}
 	
 }

@@ -16,11 +16,11 @@ public class Configuracao {
 	}
 	
 	public float getPreco(){
-		
+		return 0;
 	}
 	
 	public String gerarDetalhes(){
-		
+		return new String();
 	}
 	
 	public void adicionarPeca(Componentes p){
