@@ -31,7 +31,13 @@ public class Encomenda {
 	}
 	
 	public String gerarDetalhes(){
-		return new String();
+		
+		StringBuilder stringBuilder = new StringBuilder();
+		stringBuilder.append(String.format("Status: %d%n", this.status));
+		stringBuilder.append(String.format("Numero: %d%n", this.numero));
+		stringBuilder.append(String.format("Nome: %s%n", this.nomeDoCliente));
+		
+		return stringBuilder.toString();
 	}
 	
 }

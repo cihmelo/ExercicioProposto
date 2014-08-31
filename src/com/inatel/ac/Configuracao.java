@@ -13,6 +13,7 @@ public class Configuracao {
 	public Configuracao(String nome, String tipo){
 		this.nome = nome;
 		this.tipo = tipo;
+	
 	}
 	
 	public float getPreco(){
@@ -20,7 +21,12 @@ public class Configuracao {
 	}
 	
 	public String gerarDetalhes(){
-		return new String();
+		
+		StringBuilder stringBuilder = new StringBuilder();
+		stringBuilder.append(String.format("Status: %s%n", this.nome));
+		stringBuilder.append(String.format("Numero: %s%n", this.tipo));
+		
+		return stringBuilder.toString();
 	}
 	
 	public void adicionarPeca(Componentes p){

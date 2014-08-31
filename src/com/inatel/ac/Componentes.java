@@ -11,7 +11,12 @@ public class Componentes {
 	}
 	
 	public String gerarDetalhes(){
-		return new String();
+		
+		StringBuilder stringBuilder = new StringBuilder();
+		stringBuilder.append(String.format("Status: %s%n", this.nome));
+		stringBuilder.append(String.format("Numero: %f%n", this.preco));
+		
+		return stringBuilder.toString();
 	}
 	
 }
