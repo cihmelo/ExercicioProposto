@@ -1,4 +1,4 @@
-package com.inatel.ac;
+package com.inatel.ac308.encomendas;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.inatel.ac;
+package com.inatel.ac308.encomendas;
 
 public class Componentes {
 
