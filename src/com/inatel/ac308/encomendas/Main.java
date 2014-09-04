@@ -9,6 +9,12 @@ public class Main {
 	
 	public static void main(String[] args) {
 
+		new Main().exibeMenu();
+
+	}
+	
+	private void exibeMenu(){
+		
 		System.out.println("****MENU****");
 		System.out.println("1. Cadastrar");
 		System.out.println("2. Imprimir");
@@ -20,16 +26,15 @@ public class Main {
 
 		switch (choice) {
 		case 1:
-			new Main().cadastrar();
+			cadastrar();
 			break;
 		case 2:
-			new Main().listar();
+			listar();
 			break;
 		case 3:
 			return;
 
 		}
-
 	}
 
 	private void cadastrar() {
@@ -63,10 +68,27 @@ public class Main {
 		
 		hashMap.put(encomenda.hashCode(), encomenda);
 		
+		exibeMenu();
+		
 	}
 
 	private void listar() {
 
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Entre com o numero da encomenda: ");
+		int numero = scanner.nextInt();
+		Encomenda encomenda = hashMap.get(hashCode(numero));
+		
+		System.out.println("Encomenda: " + encomenda.gerarDetalhes());
+		
 	}
 
+	public int hashCode(int numero) {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + numero;
+		return result;
+	}
+	
 }
